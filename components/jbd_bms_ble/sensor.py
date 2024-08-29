@@ -179,7 +179,7 @@ CONFIG_SCHEMA = cv.Schema(
         cv.GenerateID(CONF_JBD_BMS_BLE_ID): cv.use_id(JbdBmsBle),
         cv.Optional(CONF_STATE_OF_CHARGE): sensor.sensor_schema(
             unit_of_measurement=UNIT_PERCENT,
-            accuracy_decimals=0,
+            accuracy_decimals=2,
             device_class=DEVICE_CLASS_BATTERY,
             state_class=STATE_CLASS_MEASUREMENT,
         ),
